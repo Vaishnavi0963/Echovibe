@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EchoVibe</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="themeSwitch">
+      <span class="slider round"></span>
+    </label>
+    <span>Theme</span>
+  </div>
+
+  <header class="hero">
+    <img src="assets/images/homepage.png" alt="EchoVibe Homepage" class="hero-img">
+    <div class="overlay">
+      <h1 class="title">EchoVibe</h1>
+      <p class="tagline">Feel the Echo, Catch the Vibe</p>
+      <button id="micButton">🎙️ Voice Search</button>
+      <a href="#player" class="btn">Start Listening</a>
+    </div>
+  </header>
+
+  <section id="player" class="player">
+    <h2>Now Playing: <span id="trackTitle">Song 1</span> <span id="likeIcon">🤍</span></h2>
+    <audio id="audio" controls>
+      <source src="assets/music/song1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="visualizer">
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </div>
+
+    <div id="lyrics">
+      <h3>Lyrics</h3>
+      <p id="lyricsText">Sample lyrics for Song 1 will be displayed here...</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
